@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2,
+h4 {
+  text-transform: uppercase;
+  color: #157698;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 70px;
+  margin-bottom: 40px;
+}
+.header .container .header__info {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 75%;
+}
+.header .container .header__info h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 900;
+  color: #157698;
+  margin-bottom: 15px;
+}
+.header .container .header__info h1 span {
+  color: #A9A9A9;
+  font-weight: 400;
+}
+.header .container .header__info h3 {
+  text-transform: uppercase;
+  color: #157698;
+  font-weight: 400;
+  font-size: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #999999;
+}
+.header .header__link ul {
+  display: flex;
+  flex-direction: row;
+  padding-top: 25px;
+  border-bottom: 1px solid #999999;
+}
+.header .header__link ul li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+.header .header__link ul li:not(:last-child) {
+  margin-right: 150px;
+}
+.header .header__link ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333333;
+}
+.header .header__link ul li .facebook {
+  transition-property: color;
+  transition: 0.3s;
+}
+.header .header__link ul li .facebook::before {
+  margin-right: 15px;
+  content: url(../img/facebook-square-brands.svg);
+}
+.header .header__link ul li .linkedin::before {
+  margin-right: 15px;
+  content: url(../img/linkedin-brands.svg);
+}
+.header .header__link ul li .social {
+  transition-property: color;
+  transition: 0.3s;
+}
+.header .header__link ul li .social:hover {
+  color: #157698;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+main {
+  padding: 30px 20px 50px;
+}
+main .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .container aside {
+  max-width: 215px;
+  margin-right: 95px;
+}
+main .container aside span {
+  display: flex;
+  margin-bottom: 15px;
+}
+main .container aside span b {
+  margin-right: 10px;
+}
+main .container aside p {
+  margin-bottom: 25px;
+}
+main .container aside p > span {
+  font-weight: 900;
+}
+main .main-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+}
+main .main-info .work-info {
+  display: flex;
+  flex-direction: column;
+}
+main .main-info .work-info .title h4 > span {
+  color: #A9A9A9;
+}
+main .main-info .work-info .title p {
+  margin-left: 15px;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+main .main-info .skills {
+  display: flex;
+}
+main .main-info .skills .computer-skills {
+  margin-right: 150px;
+}
+main .main-info .skills .Languages {
+  min-width: 25%;
+}
+main .main-info .skills ul {
+  margin-bottom: 20px;
+}
+main .main-info .skills ul li b {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

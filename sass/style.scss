@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2,
+h4 {
+    text-transform: uppercase;
+    color: #157698;
+    font-weight: 900;
+    margin-bottom: 20px;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.header {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 70px;
+        margin-bottom: 40px;
+
+        .header__info {
+            padding-top: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            min-width: 75%;
+
+
+            h1 {
+                text-transform: uppercase;
+                font-size: 50px;
+                font-weight: 900;
+                color: #157698;
+                margin-bottom: 15px;
+
+                span {
+                    color: #A9A9A9;
+                    font-weight: 400;
+                }
+            }
+
+            h3 {
+                text-transform: uppercase;
+                color: #157698;
+                font-weight: 400;
+                font-size: 25px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #999999;
+            }
+        }
+    }
+
+    .header__link {
+        ul {
+            display: flex;
+            flex-direction: row;
+            padding-top: 25px;
+            border-bottom: 1px solid #999999;
+
+            li {
+                list-style: none;
+                margin-bottom: 25px;
+
+                &:not(:last-child) {
+                    margin-right: 150px;
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color: #333333;
+                }
+
+                .facebook {
+                    transition-property: color;
+                    transition: 0.3s;
+                        &::before {
+                            margin-right: 15px;
+                            content: url(../img/facebook-square-brands.svg);
+                        }
+                }
+                .linkedin {
+                    &::before {
+                        margin-right: 15px;
+                        content: url(../img/linkedin-brands.svg);
+                    }
+                }
+                .social {
+                    transition-property: color;
+                    transition: 0.3s;
+                    
+                    &:hover {
+                        color: #157698;
+                        transition: 0.3s;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    padding: 30px 20px 50px;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        aside {
+            max-width: 215px;
+            margin-right: 95px;
+
+            span {
+                b {
+                    margin-right: 10px;
+                }
+
+                display: flex;
+                margin-bottom: 15px;
+            }
+
+            p {
+                margin-bottom: 25px;
+
+                &>span {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        max-width: 75%;
+
+        .work-info {
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                h4 {
+                    &>span {
+                        color: #A9A9A9;
+                    }
+                }
+
+                p {
+                    margin-left: 15px;
+                    line-height: 2;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .skills {
+            display: flex;
+
+            .computer-skills {
+                margin-right: 150px;
+            }
+
+            .Languages {
+                min-width: 25%;
+            }
+
+            ul {
+                margin-bottom: 20px;
+
+                li {
+                    b {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
